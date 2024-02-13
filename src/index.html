@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body class=" font-poppins">
+<div class="head-sec bg-blue-950  hidden md:block ">
+    <div class="container mx-auto py-2">
+        <div class="flex justify-between">
+            <div>
+                <p class="text-white md:text-xs lg:text-base">
+                    Souqcairo, Find the Best
+                </p>
+            </div>
+            <div class="flex justify-center gap-2 text-white">
+                <div class="flex justify-center items-center md:text-xs lg:text-base gap-1 ">
+                    <ion-icon class=" " name="help-circle-outline"></ion-icon>
+                    <p class="">Help</p>
+                </div>
+                <div class="flex justify-center items-center md:text-xs lg:text-base gap-1">
+                    <ion-icon class=" " name="globe-outline"></ion-icon>
+                    <p class="">English</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="search-sec container mx-auto py-2 hidden md:block">
+    <div class="grid grid-cols-6 items-center gap-4">
+        <div class="">
+            <img src="/imgs/Logo.png" alt="Logo Image">
+        </div>
+        <div class="flex gap-2 w-full col-span-3">
+            <label for="full-name"></label>
+            <input
+                    class=" w-full md:text-xs lg:text-base h-12 rounded-lg border-2 text-gray-500 border-gray-300 pl-2"
+                    id="full-name"
+                    type="text"
+                    placeholder="Search all products or categories"
+                    required
+            />
+            <button class=" w-44 bg-blue-950 text-white rounded-lg">Search</button>
+        </div>
+        <div class=" flex gap-6 col-span-2 justify-end">
+            <div>
+                <a href="#" class="flex items-center gap-2 md:text-xs lg:text-base">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="">Account</span></a>
+            </div>
+            <div>
+                <a href="#" class="flex items-center gap-2 md:text-xs lg:text-base ">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span class="">Wish list</span></a>
+            </div>
+            <div>
+                <a href="#" class="flex items-center gap-2 md:text-xs lg:text-base">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span class="">Cart</span></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="mob-search-sec container mx-auto py-2">
+
+</div>
+<nav class="navbar-sec container mx-auto py-2  hidden md:block">
+    <div class="flex justify-between items-center md:my-2 lg:my-4">
+        <div>
+            <a href="#" id="offers" class="text-orange-600 hover:text-orange-500 md:text-xs lg:text-base">% Offers</a>
+        </div>
+        <div>
+            <a href="#" class="flex items-center hover:text-blue-950 md:text-xs lg:text-base" id="Shop">Shop All
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex items-center hover:text-blue-950 md:text-xs lg:text-base" id="TV">TVs and
+                Electronics
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex items-center hover:text-blue-950 md:text-xs lg:text-base" id="Home">Home Appliances
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex items-center hover:text-blue-950 md:text-xs lg:text-base" id="Air conditionners">Air
+                Conditionners And Purifiers
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex items-center hover:text-blue-950 md:text-xs lg:text-base" id="personal care">Health
+                &
+                personal Care
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="valu-photo-sec container mx-auto py-2 relative ">
+    <div>
+        <img class="w-full rounded-lg" src="/imgs/Group.png">
+    </div>
+    <div class="hidden md:block">
+        <div>
+            <button class="absolute inset-y-0 left-0">
+                <ion-icon class="text-4xl" name="chevron-back-outline"></ion-icon>
+            </button>
+        </div>
+        <div>
+            <button class="absolute inset-y-0 right-0 ">
+                <ion-icon class="text-4xl" name="chevron-forward-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+    <ul class="flex gap-1 absolute inset-x-1/2 bottom-0">
+        <li class="text-4xl">&bull;</li>
+        <li class="text-4xl text-white">&bull;</li>
+        <li class="text-4xl text-white">&bull;</li>
+    </ul>
+</div>
+<div class="threephoto-sec container mx-auto py-2 gap-4 grid grid-cols-1  md:grid-cols-3  mb-12">
+    <div class="w-full">
+        <img class="w-full" src="/imgs/Group%2082.png">
+    </div>
+    <div class="w-full">
+        <img class="w-full" src="/imgs/Group%2081.png">
+    </div>
+    <div class="w-full">
+        <img class="w-full" src="/imgs/Group%2080.png">
+    </div>
+</div>
+<div class="shopby-sec container mx-auto py-2 flex justify-between items-center mb-8">
+    <div>
+        <h1 class="text-4xl font-bold ">Shop by Categories</h1>
+    </div>
+    <div class="">
+        <a class="text-blue-800 flex items-center" href="#">See ALL
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>
+    </div>
+</div>
+<div class="categories-sec container mx-auto py-2 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between ">
+        <div class=" w-full h-full">
+            <img class=" w-full h-full" src="/imgs/1.png">
+        </div>
+        <div class="bg-black/70 w-full text-center py-3  ">
+            <p class="text-white md:text-sm lg:text-lg">Offers & Discounts</p>
+        </div>
+    </div>
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between">
+        <img class=" mt-10  " src="/imgs/2.png">
+        <div class="bg-black/70 w-full text-center py-3  ">
+            <p class="text-white md:text-sm lg:text-lg">TVs and Electronics</p>
+        </div>
+    </div>
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between">
+        <img class=" mt-10  " src="/imgs/3.png">
+        <div class="bg-black/70 w-full text-center py-3  ">
+            <p class="text-white md:text-sm lg:text-lg">TVs and Electronics</p>
+        </div>
+    </div>
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between">
+        <img class=" mt-4" src="/imgs/4.png">
+        <div class="bg-black/70 w-full text-center py-3">
+            <p class="text-white md:text-sm lg:text-lg">Air Conditionners</p>
+        </div>
+    </div>
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between">
+        <img class=" mt-4" src="/imgs/5.png">
+        <div class="bg-black/70 w-full text-center py-3">
+            <p class="text-white md:text-sm lg:text-lg">Coffee Maker</p>
+        </div>
+    </div>
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between">
+        <img class=" mt-4" src="/imgs/6.png">
+        <div class="bg-black/70 w-full text-center py-3">
+            <p class="text-white md:text-sm lg:text-lg">Fans</p>
+        </div>
+    </div>
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between">
+        <img class=" mt-10" src="/imgs/7.png">
+        <div class="bg-black/70 w-full text-center py-3">
+            <p class="text-white md:text-sm lg:text-lg">Small home appliances</p>
+        </div>
+    </div>
+    <div class=" flex flex-col items-center bg-gray-950 hover:bg-blue-950/75 rounded-xl overflow-hidden justify-between">
+        <img class=" mt-4" src="/imgs/8.png">
+        <div class="bg-black/70 w-full text-center py-3">
+            <p class="text-white md:text-sm lg:text-lg">Freestanding Cookers</p>
+        </div>
+    </div>
+</div>
+<div class="sale-sec container mx-auto py-2 bg-gray-950 my-12 ">
+    <div class=" grid grid-cols-2 ">
+        <div class="flex flex-col justify-center gap-14 ml-12 w-full">
+            <h1 class="text-7xl font-bold">Sale 5%</h1>
+            <P class="md:text-2xl lg:text-4xl  font-medium">
+                Ariston NLLCD 1165 SC ADEX
+                Washing machine
+            </P>
+            <button class=" w-8/12 h-12 bg-blue-950 text-white rounded-lg font-semibold text-xl items-center hover:bg-blue-950/95">
+                Search
+            </button>
+        </div>
+        <div class=" flex items-center justify-center my-12">
+            <img class="w-9/12" src="/imgs/9.png">
+        </div>
+    </div>
+</div>
+<div class="best-sec container mx-auto py-2 flex justify-between items-center mb-8">
+    <div>
+        <h1 class="text-4xl font-bold ">Best Selling</h1>
+    </div>
+    <div class="">
+        <a class="text-blue-800 flex items-center" href="#">See ALL
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>
+    </div>
+</div>
+<div class="selling-sec container mx-auto py-2 flex justify-between items-center gap-4 overflow-x-auto">
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80	">
+        <div class="flex justify-between w-full mt-4 items-center">
+            <div class="bg-orange-950 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">5% Off</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12 mb-2 flex items-center justify-center hover:border-blue-950 border-2 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center ">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80	">
+        <div class="flex justify-between mt-4 items-center w-full">
+            <div class="bg-green-500 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">New</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12 mb-2 flex items-center justify-center border-2 hover:border-blue-950 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80	">
+        <div class="flex justify-between mt-4 items-center w-full">
+            <div class="bg-orange-950 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">5% Off</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12  mb-2 flex items-center justify-center border-2 hover:border-blue-950 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80	">
+        <div class="flex justify-between mt-4 items-center w-full">
+            <div class="bg-orange-950 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">5% Off</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12	 mb-2 flex items-center justify-center border-2 hover:border-blue-950 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+</div>
+<div class="valu2-photo-sec container mx-auto py-2 my-12 ">
+    <div>
+        <img class="w-full rounded-lg" src="/imgs/Group.png">
+    </div>
+</div>
+<div class="top-sec container mx-auto py-2 flex justify-between items-center mb-8">
+    <div>
+        <h1 class="text-4xl font-bold ">Top Brands</h1>
+    </div>
+    <div class="">
+        <a class="text-blue-800 flex items-center" href="#">See ALL
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>
+    </div>
+</div>
+<div class="selling2-sec container mx-auto py-2 flex justify-between items-center gap-4 overflow-x-auto">
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80 ">
+        <div class="flex justify-between w-full mt-4 items-center">
+            <div class="bg-orange-950 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">5% Off</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12 mb-2 flex items-center justify-center hover:border-blue-950 border-2 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center ">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80">
+        <div class="flex justify-between mt-4 items-center w-full">
+            <div class="bg-green-500 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">New</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12 mb-2 flex items-center justify-center border-2 hover:border-blue-950 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80">
+        <div class="flex justify-between mt-4 items-center w-full">
+            <div class="bg-orange-950 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">5% Off</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12  mb-2 flex items-center justify-center border-2 hover:border-blue-950 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-col justify-between items-center gap-6 border-2 rounded-lg  h-128 shrink-0 w-80">
+        <div class="flex justify-between mt-4 items-center w-full">
+            <div class="bg-orange-950 w-16 h-9 flex justify-center items-center rounded-r-lg">
+                <p class="text-white font-semibold">5% Off</p>
+            </div>
+            <ion-icon class="text-2xl mr-2" name="heart-outline"></ion-icon>
+        </div>
+        <div>
+            <img src="/imgs/10.png" alt="washing machine">
+        </div>
+        <div class="w-11/12">
+            <p class="text-lg font-normal mb-2 text-gray-500">Ariston NLLCD 1165 SC ADEX Washing machine</p>
+            <p class="text-lg font-normal mb-2">6000 EGP</p>
+        </div>
+        <div class="w-11/12	 mb-2 flex items-center justify-center border-2 hover:border-blue-950 rounded-xl hover:text-blue-950">
+            <button class="flex items-center h-12 w-full justify-center">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add TO Cart
+            </button>
+        </div>
+    </div>
+</div>
+<div class="quick-sec container mx-auto py-2 my-12 flex justify-between overflow-x-auto">
+    <div class="flex shrink-0 w-80 ">
+        <div class="">
+            <ion-icon class="text-2xl pt-1" name="flash-outline"></ion-icon>
+        </div>
+        <div class="pl-2">
+            <h1 class="text-3xl font-medium mb-2">Quick order</h1>
+            <p class="text-base">Vitae adipiscing tu enean ligula nibhmolestie id viverra dapilo eleifend.</p>
+        </div>
+    </div>
+    <div class="flex shrink-0 w-80">
+        <div class="">
+            <ion-icon class="text-2xl pt-1" name="car-outline"></ion-icon>
+        </div>
+        <div class="pl-2">
+            <h1 class="text-3xl font-medium mb-2">Free Delivery</h1>
+            <p class="text-base">Mauris in nonummy diam sodales wisi vel nonummy a, vestibulum iaculis
+                .</p>
+        </div>
+    </div>
+    <div class="flex shrink-0 w-80">
+        <div class="">
+            <ion-icon class="text-2xl pt-1" name="return-down-back-outline"></ion-icon>
+        </div>
+        <div class="pl-2 ">
+            <h1 class="text-3xl font-medium mb-2">14 Day Return</h1>
+            <p class="text-base">Proin ultricies lobortis, varius eu, purus. Phasellus laoreet ligula at, consequat
+                diam.</p>
+        </div>
+    </div>
+</div>
+<div class="our-sec container mx-auto py-2 my-12">
+    <h1 class="text-4xl font-bold ">Our Brands</h1>
+</div>
+<div class="scroll-sec container mx-auto mb-12 flex  gap-6 overflow-x-auto">
+    <div class="w-64  h-32 border-2 shrink-0 flex justify-center items-center ">
+        <img class="" src="/imgs/g1.png">
+    </div>
+    <div class="w-64  h-32 border-2 shrink-0 flex justify-center items-center">
+        <img class="" src="/imgs/g2.png">
+    </div>
+    <div class="w-64  h-32 border-2 shrink-0 flex justify-center items-center">
+        <img class="" src="/imgs/g3.png">
+    </div>
+    <div class="w-64  h-32 border-2 shrink-0 flex justify-center items-center">
+        <img class="" src="/imgs/g4.png">
+    </div>
+    <div class="w-64  h-32 border-2 shrink-0 flex justify-center items-center">
+        <img class="" src="/imgs/g5.png">
+    </div>
+    <div class="w-64  h-32 border-2 shrink-0 flex justify-center items-center">
+        <img class="" src="/imgs/g1.png">
+    </div>
+    <div class="w-64  h-32 border-2 shrink-0 flex justify-center items-center">
+        <img class="" src="/imgs/g4.png">
+    </div>
+
+</div>
+<footer class="bg-blue-950">
+    <div class="container mx-auto  text-white font-poppins grid grid-cols-4 py-10">
+        <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2 mr-3">
+                <div>
+                    <img src="/imgs/IMG2.png">
+                </div>
+                <h1 class=" md:text-lg lg:text-2xl font-medium">About SouqCairo</h1>
+
+                <p class="md:text-xs lg:text-base font-normal">We are an online shopping site that provides home
+                    supplies from
+                    electrical appliances.</p>
+            </div>
+            <div>
+                <h1 class=" md:text-lg lg:text-2xl font-medium">Follow Us</h1>
+                <div class="flex gap-6 py-4">
+                    <ion-icon class="text-3xl" name="logo-facebook"></ion-icon>
+                    <ion-icon class="text-3xl" name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <div>
+                <div>
+                    <h1 class=" md:text-lg lg:text-2xl font-medium pb-2">Useful Links</h1>
+                </div>
+                <div>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">Contact with us</p>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">Terms of use</p>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">About</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h1 class=" md:text-lg lg:text-2xl font-medium pb-2">Customer Service </h1>
+                </div>
+                <div>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">My Account</p>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">Orders</p>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">Addresses</p>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">Shop</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1 class=" md:text-lg lg:text-2xl font-medium pb-2">Working Time </h1>
+            </div>
+            <div>
+                <p class="md:text-xs lg:text-base font-normal pb-1">Level 13, 2 Elizabeth St,<br>
+                    Melbourne, Victoria 3000,<br>
+                    Australia</p>
+                <div>
+                    <p class="md:text-xs lg:text-base font-normal ">Monday - Friday</p>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">09:00 AM - 06:00 PM</p>
+                </div>
+                <div>
+                    <p class="md:text-xs lg:text-base font-normal ">Saturday</p>
+                    <p class="md:text-xs lg:text-base font-normal pb-1">07:00 AM - 08:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1 class=" md:text-lg lg:text-2xl font-medium pb-2">Subscribe</h1>
+                <p class="md:text-xs lg:text-base font-normal pb-1">Get notified of new offers and discounts</p>
+            </div>
+            <div>
+                <label for="Email-Address"></label>
+                <input
+                        class=" w-10/12 h-12 rounded-lg border-2 text-gray-500 border-gray-300 pl-2 mb-4"
+                        id="Email-Address"
+                        type="text"
+                        placeholder="Email Address"
+
+                />
+            </div>
+            <div class="flex justify-between w-10/12">
+                <div>
+                    <img src="/imgs/v1.png" alt="">
+                </div>
+                <div>
+                    <img src="/imgs/v2.png" alt="">
+                </div>
+                <div>
+                    <img src="/imgs/v3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto py-2 text-white border-t-2">
+        <div class="flex gap-1 justify-center items-center py-4">
+            <p class="md:text-xs lg:text-base">© 2022 All Rights Reserved | Powered by </p>
+            <a class="md:text-xs lg:text-base" href="#"> XTND.net</a>
+            </divcopy-right-head>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
